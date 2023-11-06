@@ -3,9 +3,11 @@ function Players() {
 
     React.useEffect(() => {
         setPlayers([{
-            name: "Bayarkhuu"
-        },{
-            name: "Gereltsetseg"
+            name: "Bayarkhuu",
+            score: 0
+        }, {
+            name: "Gereltsetseg",
+            score: 0
         }])
     }, []);
 
