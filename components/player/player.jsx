@@ -29,7 +29,7 @@ function Player(props) {
             } else {
                 props.onUpdate(newPlayer);
             }
-        }
+        } else props.onUpdate(newPlayer);
         setEdit(false);
     }
 
