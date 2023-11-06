@@ -36,7 +36,7 @@ function Score(props) {
         {score !== 0 ? <div style={{display: "flex", gap: 10, alignItems: "center"}}>
             <div className={`score ${big ? "scoreBig" : ""}`}>{score}</div>
             <button className={"scoreAdd"} onClick={onDone}>&#43; Нэмэх</button>
-            <button className={"scoreReset"} onClick={onDone}>&#10005; Цэвэрлэх</button>
+            <button className={"scoreReset"} onClick={() => setScore(0)}>&#10005; Цэвэрлэх</button>
         </div> : null}
     </div>
 }
