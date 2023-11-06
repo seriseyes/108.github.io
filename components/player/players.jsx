@@ -46,7 +46,7 @@ function Players() {
 
     return <div className={"players"}>
         <div style={{display: "flex", gap: 10, alignItems: "center"}}>
-            <h1>Players</h1>
+            <h1>Тоглогч нар</h1>
             <button onClick={resetAllScores} className={"resetAll"}>Бүх тоглогчийн оноог дахин эхлүүлэх</button>
         </div>
         {players.map(player => <Player player={player} onUpdate={onUpdate} onDelete={onDelete}/>)}
@@ -54,7 +54,7 @@ function Players() {
             onClick={addPlayer}
             className="button-53" role="button"
         >
-            Add Player
+            Тоглогч нэмэх
         </button>
     </div>
 }
