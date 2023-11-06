@@ -4,7 +4,11 @@ function Players() {
     React.useEffect(() => {
         const localPlayers = Object.values({...localStorage});
         if (localPlayers) {
-            setPlayers(localPlayers.map(player => JSON.parse(player)));
+            if (localPlayers.length === 0) {
+                addPlayer();
+            } else {
+                setPlayers(localPlayers.map(player => JSON.parse(player)));
+            }
         }
     }, []);
 
