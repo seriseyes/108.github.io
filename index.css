@@ -1,3 +1,11 @@
+#root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
 .avatar {
     vertical-align: middle;
     width: 50px;
@@ -7,15 +15,19 @@
 
 .player {
     display: flex;
-    align-items: center;
+    flex-direction: column;
     gap: 10px;
     padding: 10px;
     margin: 10px;
     background-color: #2F3136;
     border-radius: 5px;
+    width: 100%;
 }
 
 .playerName {
+    display: flex;
+    align-items: center;
+    gap: 10px;
     font-size: 20px;
     font-weight: bold;
 }
@@ -24,6 +36,153 @@
     font-size: 20px;
     font-weight: bold;
     margin-left: auto;
+}
+
+.card {
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.players {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+/* CSS */
+.button-53 {
+    align-self: center;
+    margin-top: 20px;
+    background-color: #3DD1E7;
+    border: 0 solid #E5E7EB;
+    box-sizing: border-box;
+    color: white;
+    display: flex;
+    font-family: ui-sans-serif, system-ui, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 700;
+    justify-content: center;
+    line-height: 1.75rem;
+    padding: .75rem 1.65rem;
+    position: relative;
+    text-align: center;
+    text-decoration: none #000000 solid;
+    text-decoration-thickness: auto;
+    width: 100%;
+    max-width: 460px;
+    position: relative;
+    cursor: pointer;
+    transform: rotate(-2deg);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button-53:focus {
+    outline: 0;
+}
+
+.button-53:after {
+    content: '';
+    position: absolute;
+    border: 1px solid #000000;
+    bottom: 4px;
+    left: 4px;
+    width: calc(100% - 1px);
+    height: calc(100% - 1px);
+}
+
+.button-53:hover:after {
+    bottom: 2px;
+    left: 2px;
+}
+
+@media (min-width: 768px) {
+    .button-53 {
+        padding: .75rem 3rem;
+        font-size: 1.25rem;
+    }
+}
+
+.close {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background: #F04747;
+    color: white;
+    cursor: pointer;
+    align-self: center;
+}
+
+.edit {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: none;
+    background: #3DD1E7;
+    color: white;
+    cursor: pointer;
+    align-self: center;
+}
+
+.save {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: none;
+    background: #7EBC49;
+    color: white;
+    cursor: pointer;
+    align-self: center;
+}
+
+.score {
+    font-size: 1.5rem;
+    transition: all 0.2s;
+}
+
+.scoreBig {
+    transform: scale(1.4);
+}
+
+.scoreAdd {
+    height: 25px;
+    border-radius: 16px;
+    border: none;
+    background: #3DD1E7;
+    color: white;
+    cursor: pointer;
+    align-self: center;
+}
+
+.scoreReset {
+    height: 25px;
+    border-radius: 16px;
+    border: none;
+    background: #F04747;
+    color: white;
+    cursor: pointer;
+    align-self: center;
+}
+
+.resetAll {
+    height: 25px;
+    border-radius: 16px;
+    border: none;
+    background: #F04747;
+    color: white;
+    cursor: pointer;
+    align-self: center;
+}
+
+h4 {
+    margin: 0 0 4px 0;
 }
 
 html {
