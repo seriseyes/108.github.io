@@ -3,7 +3,7 @@ function Score() {
 
     return <div>
         <h1>Score</h1>
-        {cards.map(card => <img src={"../../cards/" + card + ".png"} alt={card}/>)}
+        {cards.map(card => <img src={"./cards/" + card + ".png"} alt={card}/>)}
         <img src="" alt=""/>
     </div>
 }
