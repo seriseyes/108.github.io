@@ -49,9 +49,8 @@ function Players() {
     }
 
     return <div className={"players"}>
-        <div style={{display: "flex", gap: 10, alignItems: "center"}}>
-            <h1>Тоглогч нар</h1>
-            <button onClick={resetAllScores} className={"resetAll"}>Бүх тоглогчийн оноог дахин эхлүүлэх</button>
+        <div style={{display: "flex", gap: 10, alignItems: "center", margin: "10px 0 0 10px"}}>
+            <button onClick={resetAllScores} className={"button-53"} style={{marginBottom: "15px", width: "200px"}}>Шинээр эхлүүлэх</button>
         </div>
         {players.map(player => <Player player={player} onUpdate={onUpdate} onDelete={onDelete}/>)}
         <button

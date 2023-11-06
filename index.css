@@ -33,6 +33,8 @@
 }
 
 .playerScore {
+    display: flex;
+    gap: 10px;
     font-size: 20px;
     font-weight: bold;
     margin-left: auto;
